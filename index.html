@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea: Wireframe Plataforma de Cursos</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="pages/styles.css">
+</head>
+<body>
+
+    <!-- 1. HEADER (Barra de Navegación superior) -->
+    <header class="main-header">
+        <div class="header-left">
+            <div class="logo-placeholder">LOGO</div>
+        </div>
+        
+        <nav class="nav-menu">
+            <a href="#" class="nav-link">Inicio</a>
+            <a href="#" class="nav-link">Cursos</a>
+            <a href="#" class="nav-link">Categorías</a>
+            <a href="#" class="nav-link">Sobre nosotros</a>
+            <a href="#" class="nav-link">Contacto</a>
+        </nav>
+
+        <div class="header-right">
+            <div class="search-container">
+                <input type="text" placeholder="Buscar...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="profile-avatar">👤</div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION (Banner Principal "Aprende sin límites") -->
+    <section class="hero-section">
+        <div class="hero-left-placeholder">
+            <div class="wireframe-x"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>Aprende sin límites</h1>
+            <p>Explora nuestros cursos y mejora tus habilidades con los mejores contenidos online.</p>
+            <button class="btn-explore">Explorar cursos</button>
+        </div>
+
+        <div class="hero-right-placeholder">
+            <div class="laptop-mockup">
+                <div class="screen-play">▶</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. MAIN CONTAINER (Filtros + Grilla de Cursos) -->
+    <div class="main-container">
+        
+        <!-- SIDEBAR DE FILTROS (Columna Izquierda) -->
+        <aside class="sidebar-filters">
+            <h2>Filtros</h2>
+            
+            <!-- Grupo: Categorías -->
+            <div class="filter-group">
+                <h3>Categorías</h3>
+                <label><input type="checkbox"> Frontend</label>
+                <label><input type="checkbox"> Backend</label>
+                <label><input type="checkbox"> Diseño UI/UX</label>
+                <label><input type="checkbox"> Bases de datos</label>
+                <label><input type="checkbox"> DevOps</label>
+            </div>
+
+            <!-- Grupo: Nivel -->
+            <div class="filter-group">
+                <h3>Nivel</h3>
+                <label><input type="checkbox"> Principiante</label>
+                <label><input type="checkbox"> Intermedio</label>
+                <label><input type="checkbox"> Avanzado</label>
+            </div>
+
+            <!-- Grupo: Duración -->
+            <div class="filter-group">
+                <h3>Duración</h3>
+                <label><input type="checkbox"> 0 - 10 horas</label>
+                <label><input type="checkbox"> 10 - 30 horas</label>
+                <label><input type="checkbox"> 30+ horas</label>
+            </div>
+        </aside>
+
+        <!-- SECCIÓN DE CURSOS (Columna Derecha) -->
+        <section class="courses-section">
+            <div class="courses-header">
+                <h2>Cursos destacados</h2>
+                <div class="sort-container">
+                    <select id="sort-select">
+                        <option value="recent">Más recientes</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- GRILLA DE TARJETAS (3 columnas x 2 filas) -->
+            <div class="courses-grid">
+                
+                <!-- Tarjeta 1 -->
+                <div class="course-card">
+                    <div class="card-image-placeholder"><div class="wireframe-x"></div></div>
+                    <div class="card-body">
+                        <h3>Título del curso</h3>
+                        <p>Breve descripción del curso y lo que aprenderás.</p>
+                        <button class="btn-card">Ver curso</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="course-card">
+                    <div class="card-image-placeholder"><div class="wireframe-x"></div></div>
+                    <div class="card-body">
+                        <h3>Título del curso</h3>
+                        <p>Breve descripción del curso y lo que aprenderás.</p>
+                        <button class="btn-card">Ver curso</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="course-card">
+                    <div class="card-image-placeholder"><div class="wireframe-x"></div></div>
+                    <div class="card-body">
+                        <h3>Título del curso</h3>
+                        <p>Breve descripción del curso y lo que aprenderás.</p>
+                        <button class="btn-card">Ver curso</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="course-card">
+                    <div class="card-image-placeholder"><div class="wireframe-x"></div></div>
+                    <div class="card-body">
+                        <h3>Título del curso</h3>
+                        <p>Breve descripción del curso y lo que aprenderás.</p>
+                        <button class="btn-card">Ver curso</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="course-card">
+                    <div class="card-image-placeholder"><div class="wireframe-x"></div></div>
+                    <div class="card-body">
+                        <h3>Título del curso</h3>
+                        <p>Breve descripción del curso y lo que aprenderás.</p>
+                        <button class="btn-card">Ver curso</button>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="course-card">
+                    <div class="card-image-placeholder"><div class="wireframe-x"></div></div>
+                    <div class="card-body">
+                        <h3>Título del curso</h3>
+                        <p>Breve descripción del curso y lo que aprenderás.</p>
+                        <button class="btn-card">Ver curso</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- 4. FOOTER (Pie de página) -->
+    <footer class="main-footer">
+        <div class="footer-columns">
+            
+            <!-- Columna 1: Plataforma -->
+            <div class="footer-column">
+                <h4>Plataforma</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Cursos</a></li>
+                    <li><a href="#">Categorías</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 2: Información -->
+            <div class="footer-column">
+                <h4>Información</h4>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Políticas de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contacto -->
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📧 Kihuawc@gmail.com</li>
+                    <li>📞 +593 998623685</li>
+                    <li>📍 Quito, Ecuador</li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Redes Sociales -->
+            <div class="footer-column">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#" class="icon-circle">f</a>
+                    <a href="#" class="icon-circle">ig</a>
+                    <a href="#" class="icon-circle">tw</a>
+                    <a href="#" class="icon-circle">yt</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Plataforma de Cursos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
